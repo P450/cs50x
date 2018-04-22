@@ -1,0 +1,4 @@
+0. Allows from 3 x 3 to 9 x 9
+1. Data structure of the game board is that of a 2-dimensional int array
+2. void greet(void) 
+3. init(), draw(), move(), won() functions need to be implemented
