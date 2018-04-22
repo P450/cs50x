@@ -1,5 +1,7 @@
-****Introduction to Computer Science**** ([CS50x](https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x))
+# Introduction to Computer Science ([CS50x](https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x))
+Introduction to Computer Science offered by Harvard University via edX
 
+## Problem sets
 * [PSET0](https://docs.cs50.net/2017/x/psets/0/pset0.html)
 
 * [PSET1](https://docs.cs50.net/2017/x/psets/1/pset1.html)
