@@ -1,5 +1,7 @@
 # Introduction to Computer Science ([CS50x](https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x))
-Introduction to Computer Science offered by Harvard University via edX
+Introduction to Computer Science by Harvard. Offered online via edX.
+
+This repo is my implementations of the following problem sets. 
 
 ## Problem sets & desc
 * [PSET0](https://docs.cs50.net/2017/x/psets/0/pset0.html) - Make a game in Scratch
@@ -18,4 +20,4 @@ Introduction to Computer Science offered by Harvard University via edX
 
 * [PSET7: C$50 Finance](https://docs.cs50.net/2017/x/psets/7/pset7.html) - Make a stock transaction site in Python using Flask and SQLite
 
-* [PSET8: Mashup](https://docs.cs50.net/2017/x/psets/8/pset8.html) - Make a webapp fetching news articles based on geolocation in JavaScript using Google News and Google Maps API
+* [PSET8: Mashup](https://docs.cs50.net/2017/x/psets/8/pset8.html) - Make a webapp in Python and JS that fetches news articles based on geolocation using Google News and Google Maps API
