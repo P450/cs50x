@@ -1,0 +1,37 @@
+0.  What is pneumonoultramicroscopicsilicovolcanoconiosis?
+    - lung disease caused by inhaling very fine ash and sand dust.
+
+1.  According to its man page, what does getrusage do?
+
+    - stands for "get resource usage" and is used to benchmark performance
+    - returns resource usage measures for:
+        - self (calling process which is the sum of resources used by all threads in the process)
+        - children (all children of the calling process that have terminated and been waited for, also including all descendents who waited on their terminated children) or
+        - thread (the calling thread)
+
+2.  Per that same man page, how many members are in a variable of type struct rusage?
+    - 16
+
+3.  Why do you think we pass before and after by reference (instead of by value) to calculate, even though we’re not changing their contents?
+    - passing a struct by reference is faster than by value (takes more time to copy)
+
+
+4.  Explain as precisely as possible, in a paragraph or more, how main goes about reading words from a file. In other words, convince us that you indeed understand how that function’s for loop works.
+
+    - main() reads text one character at a time with fgetc() in a loop until EOF
+        - if that character is an alphabet, or an apostrophe that is not the first character of a word:
+            -it copies that character into a char array that holds a single word. It then increases the index of that array.
+            -   but if that index is larger than permitted (i.e. longer than the longest word in dictionary), it skips such characters unless it encounters EOF or isn't a character at which point index is returned to 0 for the next word
+        - if that character is a number:
+            - it skips until EOF or until it encounters a character that is not alphanumeric - in which case, index is reset to 0
+        - if that character is not an alphabet or a number, and index > 0, the previous word ended so add \0 and increase word count. Check the spelling to see if it's misspelled. If it's mispelled print the word and increase the mispelling count
+            - then reset index to 0
+
+
+5.  Why do you think we used fgetc to read each word’s characters one at a time rather than use fscanf with a format string like "%s" to read whole words at a time? Put another way, what problems might arise by relying on fscanf alone?
+    - reading a character at a time with fgetc gives more contorl over what is considered a word
+    - fscanf can count numbers and non-alphabet symbols as part of the word
+
+
+6.  Why do you think we declared the parameters for check and load as const (which means "constant")?
+    - in order to prevent check() and load() from changing dictionary text file
