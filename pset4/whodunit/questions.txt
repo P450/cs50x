@@ -1,0 +1,48 @@
+1.  What’s stdint.h?
+    - a headerfile that includes typedefs of different integer types of a certain width
+
+2.  What’s the point of using uint8_t, uint32_t, int32_t, and uint16_t in a program?
+    - so that such int types have the same size across different systems
+    
+    - uint8_t is an unsigned int of 8 bits
+    - uint32_t is an unsigned long long
+    - int32_t is a signed long long
+    - uint16_t is an unsigned 16 bit int
+
+3.  How many bytes is a BYTE, a DWORD, a LONG, and a WORD, respectively?
+    - BYTE is 1 byte
+    - DWORD is 4 bytes
+    - LONG is 4 bytes
+    - WORD is 2 bytes
+
+4.  What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be?
+    Leading bytes used to identify file formats (with high probability) are generally called "magic numbers."
+    - the characters BM in ASCII 
+
+5.  What’s the difference between bfSize and biSize?
+    - bfSize: The size, in bytes, of the bitmap file
+    - biSize: The number of bytes required by the structure (BITMAPINFOHEADER)
+
+6.  What does it mean if biHeight is negative?
+    - If biHeight is negative, the bitmap is a top-down DIB (device-independent bitmap)
+    and its origin is the upper-left corner
+
+7.  What field in BITMAPINFOHEADER specifies the BMP’s color depth (i.e., bits per pixel)?
+    - biBitCount
+
+8.  Why might fopen return NULL in lines 24 and 32 of copy.c?
+    - if the file doesn't exist and there is not enough space to write a new file
+
+9.  Why is the third argument to fread always 1 in our code?
+    - because we're reading a struct in every fread
+
+10. What value does line 65 of copy.c assign to padding if bi.biWidth is 3?
+    - int padding =  (4 - (bi.biWidth * sizeof(RGBTRIPLE)) % 4) % 4;
+    - (4 - (3 pixels * 3 bytes) % 4 ) % 4, so the padding is 3
+
+11. What does fseek do?
+    - Use fseek when you want to change the offset of the file pointer fp
+    - offset refers to how many bytes you want to change the current position of the file pointer fp
+
+12. What is SEEK_CUR?
+    - can be used as an argument to fseek() to set the offset to the current position of the pointer
