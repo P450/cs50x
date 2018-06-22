@@ -1,9 +1,15 @@
 # Introduction to Computer Science ([CS50x](https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x))
+
+---
+
 Introduction to Computer Science by Harvard. Offered online via edX.
 
-This repo is my implementations of the following problem sets: 
+This repo consists of my implementations of the following problem sets: 
 
 ## Problem sets
+
+---
+
 * [PSET0](https://docs.cs50.net/2017/x/psets/0/pset0.html) - Make a game in Scratch
 
 * [PSET1: C](https://docs.cs50.net/2017/x/psets/1/pset1.html) - Write loops in C
