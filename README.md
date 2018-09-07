@@ -1,5 +1,4 @@
 # Introduction to Computer Science ([CS50x](https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x))
----
 
 Introduction to Computer Science by Harvard. Offered online via edX.
 
